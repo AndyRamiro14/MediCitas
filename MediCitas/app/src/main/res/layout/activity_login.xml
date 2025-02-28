@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FAFAFA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título de la App -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MediCitas"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#023047"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <EditText
+                android:id="@+id/etCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cédula"
+                android:background="@drawable/edittext_background"
+                android:textColor="#ffffff"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_background"
+                android:textColor="#ffffff"
+                android:textColorHint="#B0BEC5"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrarse"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
